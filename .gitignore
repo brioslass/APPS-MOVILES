@@ -15,6 +15,7 @@ bld/
 [Ll]ogs/
 .vs/
 .idea/
+.vscode/
 *.user
 *.userps
 *.suo
