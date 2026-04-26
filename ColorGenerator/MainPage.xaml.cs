@@ -14,7 +14,7 @@ public partial class MainPage : ContentPage
         UpdateColorFromSliders();
     }
 
-    private void OnSliderValueChanged(object sender, ValueChangedEventArgs e)
+    private void OnSliderValueChanged(object? sender, ValueChangedEventArgs e)
     {
         if (isRandomizing) return;
         UpdateColorFromSliders();
@@ -29,7 +29,7 @@ public partial class MainPage : ContentPage
         SetColor(r, g, b);
     }
 
-    private void OnRandomClicked(object sender, EventArgs e)
+    private void OnRandomClicked(object? sender, EventArgs e)
     {
         isRandomizing = true;
         var rnd = new Random();
@@ -51,14 +51,23 @@ public partial class MainPage : ContentPage
         Color color = Color.FromRgb(r, g, b);
         MainContainer.BackgroundColor = color;
 
+        if (RandomButton != null)
+        {
+            RandomButton.BackgroundColor = color;
+            // Contrast logic for text color to keep the button reading clearly
+            double luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+            RandomButton.TextColor = luminance > 0.5 ? Colors.Black : Colors.White;
+        }
+
         // Format to pure HEX #RRGGBB
         string hex = $"#{r:X2}{g:X2}{b:X2}";
         HexLabel.Text = hex;
     }
 
-    private async void OnCopyClicked(object sender, EventArgs e)
+    private async void OnCopyClicked(object? sender, EventArgs e)
     {
         await Clipboard.Default.SetTextAsync(HexLabel.Text);
-        await DisplayAlert("Copiado", $"Se ha copiado el color {HexLabel.Text} al portapapeles.", "OK");
+        // Según la advertencia de .NET 10, usamos DisplayAlertAsync
+        await DisplayAlertAsync("Copiado", $"Se ha copiado el color {HexLabel.Text} al portapapeles.", "OK");
     }
 }

@@ -18,8 +18,9 @@
                     
                     <Button Text="Copiar Hexadecimal" 
                             Clicked="OnCopyClicked" 
-                            BackgroundColor="Black" 
+                            BackgroundColor="#33000000" 
                             TextColor="White" 
+                            FontSize="16" 
                             CornerRadius="8" />
                 </VerticalStackLayout>
             </Border>
@@ -30,24 +31,25 @@
                     <Label Text="Generador Manual" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10" />
 
                     <Label Text="Rojo" TextColor="White" />
-                    <Slider x:Name="SliderRed" Minimum="0" Maximum="255" ValueChanged="OnSliderValueChanged" MinimumTrackColor="#FF5252" />
+                    <Slider x:Name="SliderRed" Minimum="0" Maximum="255" Value="240" ValueChanged="OnSliderValueChanged" MinimumTrackColor="#FF5252" />
 
                     <Label Text="Verde" TextColor="White" />
-                    <Slider x:Name="SliderGreen" Minimum="0" Maximum="255" ValueChanged="OnSliderValueChanged" MinimumTrackColor="#4CAF50" />
+                    <Slider x:Name="SliderGreen" Minimum="0" Maximum="255" Value="240" ValueChanged="OnSliderValueChanged" MinimumTrackColor="#4CAF50" />
 
                     <Label Text="Azul" TextColor="White" />
-                    <Slider x:Name="SliderBlue" Minimum="0" Maximum="255" ValueChanged="OnSliderValueChanged" MinimumTrackColor="#2196F3" />
+                    <Slider x:Name="SliderBlue" Minimum="0" Maximum="255" Value="240" ValueChanged="OnSliderValueChanged" MinimumTrackColor="#2196F3" />
+                    
+                    <Button x:Name="RandomButton"
+                            Text="Generar Aleatorio"
+                            Clicked="OnRandomClicked"
+                            BackgroundColor="#F0F0F0"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            CornerRadius="10"
+                            HeightRequest="50"
+                            Margin="0,15,0,0" />
                 </VerticalStackLayout>
             </Border>
-
-            <!-- Random Generator Button -->
-            <Button Text="Generar Aleatorio"
-                    Clicked="OnRandomClicked"
-                    BackgroundColor="#2196F3"
-                    TextColor="White"
-                    FontAttributes="Bold"
-                    CornerRadius="10"
-                    HeightRequest="50" />
             
         </VerticalStackLayout>
     </Grid>

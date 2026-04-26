@@ -7,7 +7,7 @@
     Title="ColorGenerator">
 
     <ShellContent
-        Title="Home"
+        Title="Generador de colores"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

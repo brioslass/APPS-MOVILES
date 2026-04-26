@@ -1,7 +1,5 @@
 # Documentación del Proyecto: Generador de Colores (.NET MAUI)
 
-Esta documentación explica las secciones clave del código construido para cumplir con los requerimientos entregados en el Proyecto 1.
-
 ## 1. Diseño de la Interfaz (`MainPage.xaml`)
 
 El diseño se construyó asegurando que los controles descansen sobre una capa translúcida para que el color de fondo generado siempre sea visible. Se utilizó el componente `Grid` como un contenedor principal que abarca toda la pantalla y que será coloreado dinámicamente.
