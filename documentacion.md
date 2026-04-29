@@ -77,3 +77,18 @@ private async void OnCopyClicked(object sender, EventArgs e)
 }
 ```
 Se hace uso del API nativo abstraído de MAUI `Clipboard` para setear el texto actual que figure en la variable mostrada en pantalla. Posteriormente, levanta una alerta para indicarle al usuario la confirmación a través del SO.
+
+## 3. Documentación Oficial y Herramientas
+
+Para el levantamiento del entorno de desarrollo y la comprensión de los componentes nativos, este proyecto se apoya en la siguiente documentación oficial:
+
+* **.NET MAUI (Microsoft):**
+  * [Instalación oficial y primeros pasos con .NET MAUI](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation).
+  * Documentación general para la creación de interfaces de usuario multiplataforma.
+* **Entorno Móvil (Android):**
+  * [Cómo instalar Android Studio](https://developer.android.com/studio/install?hl=es-419) (Requisito fundamental para compilar en Android).
+  * [Configuración y uso del Android Emulator](https://developer.android.com/studio/run/emulator?hl=es-419) para la virtualización y pruebas de la aplicación durante el desarrollo.
+
+## 4. Bibliografía y Uso de IA
+
+Durante la planificación, desarrollo y documentación de este proyecto, se utilizó **Gemini** y su contribución se centró específicamente en el Desarrollo de la lógica base ofreciendo asistencia en la estructuración de eventos en C# (`MainPage.xaml.cs`), aportando la solución de banderas booleanas (`isRandomizing`) para evitar bloqueos por bucles infinitos en la interfaz visual, en explicación e implementación de fórmulas matemáticas de luminancia y contraste para que el texto fuera visible en todo momento, También hubo colaboración en el desglose del comportamiento de la aplicación y respuestas del sistema en el archivo `flujo.md`.
