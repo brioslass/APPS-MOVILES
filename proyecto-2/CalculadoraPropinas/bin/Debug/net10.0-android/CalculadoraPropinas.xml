@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculadoraPropinas</name>
+    </assembly>
+    <members>
+        <member name="T:CalculadoraPropinas.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.TotalBoleta">
+            <inheritdoc cref="F:CalculadoraPropinas.ViewModels.MainViewModel.totalBoleta"/>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.NumeroPersonas">
+            <inheritdoc cref="F:CalculadoraPropinas.ViewModels.MainViewModel.numeroPersonas"/>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.PorcentajePropina">
+            <inheritdoc cref="F:CalculadoraPropinas.ViewModels.MainViewModel.porcentajePropina"/>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.SubtotalPorPersona">
+            <inheritdoc cref="F:CalculadoraPropinas.ViewModels.MainViewModel.subtotalPorPersona"/>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.PropinaPorPersona">
+            <inheritdoc cref="F:CalculadoraPropinas.ViewModels.MainViewModel.propinaPorPersona"/>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.TotalPorPersona">
+            <inheritdoc cref="F:CalculadoraPropinas.ViewModels.MainViewModel.totalPorPersona"/>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.TotalGeneral">
+            <inheritdoc cref="F:CalculadoraPropinas.ViewModels.MainViewModel.totalGeneral"/>
+        </member>
+        <member name="M:CalculadoraPropinas.ViewModels.MainViewModel.OnTotalBoletaChanged(System.Decimal)">
+            <summary>Executes the logic for when <see cref="P:CalculadoraPropinas.ViewModels.MainViewModel.TotalBoleta"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:CalculadoraPropinas.ViewModels.MainViewModel.TotalBoleta"/> is changed.</remarks>
+        </member>
+        <member name="M:CalculadoraPropinas.ViewModels.MainViewModel.OnNumeroPersonasChanged(System.Int32)">
+            <summary>Executes the logic for when <see cref="P:CalculadoraPropinas.ViewModels.MainViewModel.NumeroPersonas"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:CalculadoraPropinas.ViewModels.MainViewModel.NumeroPersonas"/> is changed.</remarks>
+        </member>
+        <member name="M:CalculadoraPropinas.ViewModels.MainViewModel.OnPorcentajePropinaChanged(System.Double)">
+            <summary>Executes the logic for when <see cref="P:CalculadoraPropinas.ViewModels.MainViewModel.PorcentajePropina"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:CalculadoraPropinas.ViewModels.MainViewModel.PorcentajePropina"/> is changed.</remarks>
+        </member>
+        <member name="F:CalculadoraPropinas.ViewModels.MainViewModel.elegirPropinaCommand">
+            <summary>The backing field for <see cref="P:CalculadoraPropinas.ViewModels.MainViewModel.ElegirPropinaCommand"/>.</summary>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.ElegirPropinaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:CalculadoraPropinas.ViewModels.MainViewModel.ElegirPropina(System.String)"/>.</summary>
+        </member>
+        <member name="F:CalculadoraPropinas.ViewModels.MainViewModel.dividirMasCommand">
+            <summary>The backing field for <see cref="P:CalculadoraPropinas.ViewModels.MainViewModel.DividirMasCommand"/>.</summary>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.DividirMasCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:CalculadoraPropinas.ViewModels.MainViewModel.DividirMas"/>.</summary>
+        </member>
+        <member name="F:CalculadoraPropinas.ViewModels.MainViewModel.dividirMenosCommand">
+            <summary>The backing field for <see cref="P:CalculadoraPropinas.ViewModels.MainViewModel.DividirMenosCommand"/>.</summary>
+        </member>
+        <member name="P:CalculadoraPropinas.ViewModels.MainViewModel.DividirMenosCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:CalculadoraPropinas.ViewModels.MainViewModel.DividirMenos"/>.</summary>
+        </member>
+        <member name="T:CalculadoraPropinas.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalBoleta">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalBoleta" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NumeroPersonas">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NumeroPersonas" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PorcentajePropina">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PorcentajePropina" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SubtotalPorPersona">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SubtotalPorPersona" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PropinaPorPersona">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PropinaPorPersona" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalPorPersona">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalPorPersona" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalGeneral">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalGeneral" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalBoleta">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalBoleta" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NumeroPersonas">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NumeroPersonas" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PorcentajePropina">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PorcentajePropina" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SubtotalPorPersona">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SubtotalPorPersona" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PropinaPorPersona">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PropinaPorPersona" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalPorPersona">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalPorPersona" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalGeneral">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalGeneral" generated properties.</summary>
+        </member>
+    </members>
+</doc>

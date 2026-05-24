@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:CalculadoraPropinas.ViewModels"
+             x:Class="CalculadoraPropinas.MainPage"
+             BackgroundColor="#212121">
+
+    <Grid Padding="20" RowSpacing="30" RowDefinitions="Auto, *">
+
+        <!-- Contenedor para los Totales usando Border (reemplazo de Frame) -->
+        <Border Grid.Row="0" BackgroundColor="#333333" StrokeShape="RoundRectangle 10" Padding="20" Stroke="Transparent">
+            <Grid ColumnDefinitions="*, *" RowDefinitions="Auto, Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="TOTAL P/PERSONA" TextColor="#00BCD4" FontAttributes="Bold" Margin="0,0,0,15" />
+                
+                <Label Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Text="{Binding TotalPorPersona, StringFormat='{0:F0}'}" TextColor="White" FontSize="40" VerticalOptions="Center" />
+                
+                <VerticalStackLayout Grid.Row="1" Grid.Column="1" Spacing="5">
+                    <Label Text="SUBTOTAL" TextColor="#BDBDBD" FontSize="12" />
+                    <Label Text="{Binding SubtotalPorPersona, StringFormat='{0:F0}'}" TextColor="White" FontSize="14" />
+                </VerticalStackLayout>
+                
+                <VerticalStackLayout Grid.Row="2" Grid.Column="1" Spacing="5" Margin="0,15,0,0">
+                    <Label Text="{Binding PorcentajePropina, StringFormat='PROPINA ({0:F0}%)'}" TextColor="#BDBDBD" FontSize="12" />
+                    <Label Text="{Binding PropinaPorPersona, StringFormat='{0:F0}'}" TextColor="White" FontSize="14" />
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
+
+        <!-- Sección de Entradas -->
+        <Grid Grid.Row="1" RowDefinitions="Auto, Auto, Auto, Auto, Auto" RowSpacing="30" ColumnDefinitions="*, 2*">
+            
+            <!-- Valor Boleta -->
+            <Label Grid.Row="0" Grid.Column="0" Text="Valor Boleta:&#10;$" TextColor="#BDBDBD" VerticalOptions="Center" />
+            <Entry Grid.Row="0" Grid.Column="1" Text="{Binding TotalBoleta}" Keyboard="Numeric" BackgroundColor="#333333" TextColor="White" />
+            
+            <!-- Elige Propina -->
+            <Label Grid.Row="1" Grid.Column="0" Text="Elige&#10;Propina" TextColor="#BDBDBD" VerticalOptions="Center" />
+            <Grid Grid.Row="1" Grid.Column="1" ColumnDefinitions="*, *, *" ColumnSpacing="10">
+                <Button Grid.Column="0" Text="10%" Command="{Binding ElegirPropinaCommand}" CommandParameter="10" BackgroundColor="#5E35B1" TextColor="White" CornerRadius="8" />
+                <Button Grid.Column="1" Text="15%" Command="{Binding ElegirPropinaCommand}" CommandParameter="15" BackgroundColor="#5E35B1" TextColor="White" CornerRadius="8" />
+                <Button Grid.Column="2" Text="20%" Command="{Binding ElegirPropinaCommand}" CommandParameter="20" BackgroundColor="#5E35B1" TextColor="White" CornerRadius="8" />
+            </Grid>
+            
+            <!-- Slider Propina -->
+            <VerticalStackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="Center">
+                <Label Text="Propina:" TextColor="#BDBDBD" />
+                <Label Text="{Binding PorcentajePropina, StringFormat='{0:F0}%'}" TextColor="#BDBDBD" />
+            </VerticalStackLayout>
+            <Slider Grid.Row="2" Grid.Column="1" Minimum="0" Maximum="50" Value="{Binding PorcentajePropina}" MinimumTrackColor="#5E35B1" ThumbColor="#5E35B1" VerticalOptions="Center" />
+            
+            <!-- Dividir el Total -->
+            <Label Grid.Row="3" Grid.Column="0" Text="Dividir el&#10;Total" TextColor="#BDBDBD" VerticalOptions="Center" />
+            <Grid Grid.Row="3" Grid.Column="1" ColumnDefinitions="*, *, *">
+                <Button Grid.Column="0" Text="-" Command="{Binding DividirMenosCommand}" BackgroundColor="#5E35B1" TextColor="White" CornerRadius="8" Margin="0,0,2,0"/>
+                <Label Grid.Column="1" Text="{Binding NumeroPersonas}" TextColor="White" BackgroundColor="#333333" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" />
+                <Button Grid.Column="2" Text="+" Command="{Binding DividirMasCommand}" BackgroundColor="#5E35B1" TextColor="White" CornerRadius="8" Margin="2,0,0,0"/>
+            </Grid>
+            
+            <!-- Total General -->
+            <Label Grid.Row="4" Grid.Column="0" Text="Total General" TextColor="#BDBDBD" VerticalOptions="Center" />
+            <Label Grid.Row="4" Grid.Column="1" Text="{Binding TotalGeneral, StringFormat='${0:F0}'}" TextColor="#00BCD4" FontSize="24" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" />
+        </Grid>
+    </Grid>
+</ContentPage>
