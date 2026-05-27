@@ -1,4 +1,9 @@
-# Calculadora de Propinas - .NET MAUI
+# Calculadora de Propinas
+
+Proyecto de Apps Móviles realizado por:
+   - Jaime Guzmán
+   - Martín Pardo
+   - Bastián Ríos
 
 Esta es una aplicación móvil multiplataforma desarrollada en **.NET MAUI** utilizando el patrón de diseño **MVVM** mediante el paquete **CommunityToolkit.Mvvm**. Permite a los usuarios calcular propinas, dividir cuentas entre múltiples personas y conocer tanto el subtotal como el total a pagar de forma rápida.
 
