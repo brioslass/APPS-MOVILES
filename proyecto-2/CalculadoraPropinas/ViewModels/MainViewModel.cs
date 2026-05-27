@@ -43,7 +43,6 @@ public partial class MainViewModel : ObservableObject
 
     partial void OnPorcentajePropinaChanged(double value)
     {
-        // Redondear a entero (0 decimales) para que no tenga más de 2 dígitos (ej: 15)
         var rounded = Math.Round(value, 0);
         if (value != rounded)
         {
