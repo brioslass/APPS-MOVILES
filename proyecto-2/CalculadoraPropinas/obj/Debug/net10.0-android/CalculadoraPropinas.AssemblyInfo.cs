@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalculadoraPropinas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8caa92e246d3f07c5df5841d3c2b84d24229f82f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ed923602382aa4253603461a29336f485b1f898d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalculadoraPropinas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalculadoraPropinas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,15 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="crc64ca46ba918d5fa2f8" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiAppCompatActivity" partial_assembly_qualified_name="ColorGenerator.MainActivity, ColorGenerator">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+    </type>
+    <type name="MainApplication" package="crc64ca46ba918d5fa2f8" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiApplication" is_application="True" partial_assembly_qualified_name="ColorGenerator.MainApplication, ColorGenerator" application_constructor="MainApplication" />
+  </jcw-types>
+  <acw-types partial-assembly-name="ColorGenerator" module-name="ColorGenerator.dll">
+    <type assembly-qualified-name="ColorGenerator.MainActivity, ColorGenerator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="colorgenerator.MainActivity" java-key="crc64ca46ba918d5fa2f8.MainActivity" managed-key="ColorGenerator.MainActivity" partial-assembly-qualified-name="ColorGenerator.MainActivity, ColorGenerator" />
+    <type assembly-qualified-name="ColorGenerator.MainApplication, ColorGenerator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="colorgenerator.MainApplication" java-key="crc64ca46ba918d5fa2f8.MainApplication" managed-key="ColorGenerator.MainApplication" partial-assembly-qualified-name="ColorGenerator.MainApplication, ColorGenerator" />
+  </acw-types>
+</api>

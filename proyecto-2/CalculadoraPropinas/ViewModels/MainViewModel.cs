@@ -12,7 +12,7 @@ public partial class MainViewModel : ObservableObject
     private int numeroPersonas = 1;
 
     [ObservableProperty]
-    private double porcentajePropina = 10; // Valor por defecto sugerido en capturas (ej: 10%)
+    private double porcentajePropina = 10; 
 
     [ObservableProperty]
     private decimal subtotalPorPersona;

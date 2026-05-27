@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="CalculadoraPropinas" mvid="73302edfaf3243f298d24049c8ca93a7">
+<api type="debug" assembly-name="CalculadoraPropinas" mvid="34d4f16cdcd64f2f883ca6276e628690">
   <java-to-managed>
     <entry java-name="crc645f245fe42f566e65/MainActivity" managed-name="CalculadoraPropinas.MainActivity, CalculadoraPropinas" managed-type-token-id="33554443" />
     <entry java-name="crc645f245fe42f566e65/MainApplication" managed-name="CalculadoraPropinas.MainApplication, CalculadoraPropinas" managed-type-token-id="33554444" />

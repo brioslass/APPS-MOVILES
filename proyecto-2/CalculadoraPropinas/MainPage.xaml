@@ -7,7 +7,6 @@
 
     <Grid Padding="20" RowSpacing="30" RowDefinitions="Auto, *">
 
-        <!-- Contenedor para los Totales usando Border (reemplazo de Frame) -->
         <Border Grid.Row="0" BackgroundColor="#333333" StrokeShape="RoundRectangle 10" Padding="20" Stroke="Transparent">
             <Grid ColumnDefinitions="*, *" RowDefinitions="Auto, Auto, Auto">
                 <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="TOTAL P/PERSONA" TextColor="#00BCD4" FontAttributes="Bold" Margin="0,0,0,15" />
@@ -33,7 +32,7 @@
             <Label Grid.Row="0" Grid.Column="0" Text="Valor Boleta:&#10;$" TextColor="#BDBDBD" VerticalOptions="Center" />
             <Entry Grid.Row="0" Grid.Column="1" Text="{Binding TotalBoleta}" Keyboard="Numeric" BackgroundColor="#333333" TextColor="White" />
             
-            <!-- Elige Propina -->
+            <!-- Propina -->
             <Label Grid.Row="1" Grid.Column="0" Text="Elige&#10;Propina" TextColor="#BDBDBD" VerticalOptions="Center" />
             <Grid Grid.Row="1" Grid.Column="1" ColumnDefinitions="*, *, *" ColumnSpacing="10">
                 <Button Grid.Column="0" Text="10%" Command="{Binding ElegirPropinaCommand}" CommandParameter="10" BackgroundColor="#5E35B1" TextColor="White" CornerRadius="8" />
@@ -48,7 +47,7 @@
             </VerticalStackLayout>
             <Slider Grid.Row="2" Grid.Column="1" Minimum="0" Maximum="50" Value="{Binding PorcentajePropina}" MinimumTrackColor="#5E35B1" ThumbColor="#5E35B1" VerticalOptions="Center" />
             
-            <!-- Dividir el Total -->
+            <!-- Dividir total -->
             <Label Grid.Row="3" Grid.Column="0" Text="Dividir el&#10;Total" TextColor="#BDBDBD" VerticalOptions="Center" />
             <Grid Grid.Row="3" Grid.Column="1" ColumnDefinitions="*, *, *">
                 <Button Grid.Column="0" Text="-" Command="{Binding DividirMenosCommand}" BackgroundColor="#5E35B1" TextColor="White" CornerRadius="8" Margin="0,0,2,0"/>
